@@ -1,4 +1,7 @@
 Mytestapp::Application.routes.draw do
+  resources :tutorials
+
+
   authenticated :user do
     root :to => 'home#index'
   end
